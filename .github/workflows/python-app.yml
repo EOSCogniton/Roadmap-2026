@@ -36,7 +36,7 @@ jobs:
 
       - name: Move files to output folders
         run: |
-          mkdir -p Archive
+          ls
           cp "roadmap_sprints_latest.png" "Archive/$FILENAME"
 
       - name: Commit results

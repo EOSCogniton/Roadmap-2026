@@ -150,7 +150,7 @@ with open("sprints_blocs.txt", "r", encoding="utf-8") as f:
 # --- Génération du graphe ---
 parse(expr, is_root=True)
 
-output_filename = dot.render("roadmap_sprints_latest.png", cleanup=True)
+output_filename = dot.render("roadmap_sprints_latest", cleanup=True)
 
 
 print(f"✅ Graphe généré : {output_filename}")
