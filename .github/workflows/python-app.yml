@@ -39,10 +39,14 @@ jobs:
           ls
           cp "roadmap_sprints_latest.png" "Archive/$FILENAME"
 
-      - name: Commit results
-        run: |
-          git config user.name "GitHub Action"
-          git config user.email "actions@github.com"
-          git add Archive/*.png roadmap_sprints_latest.png
-          git commit -m "Update roadmap $(date +'%Y-%m-%d')" || echo "No changes"
-          git push
+      - name: Upload dated roadmap artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: roadmap_sprints_dated
+          path: Archive/$FILENAME
+
+      - name: Upload latest roadmap artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: roadmap_sprints_latest
+          path: roadmap_sprints_latest.png
