@@ -152,4 +152,6 @@ parse(expr, is_root=True)
 today = datetime.now().strftime("%Y-%m-%d")
 
 output_filename = f"roadmap_sprints_{today}.png"
-print(f"✅ Graphe généré : {output_path}")
+graph.render(output_filename, format="png", cleanup=True)
+
+print(f"✅ Graphe généré : {output_filename}")
