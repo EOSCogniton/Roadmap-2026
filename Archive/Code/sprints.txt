@@ -1,0 +1,16 @@
+s(
+  p(
+    s(Filaire/Chassis arriere,p(s(LAS Arrière,p(Simus FEA,CAO,Points/Cinématique)),s(Agencement meca batterie,p(Choix modules,TSAC)))),
+    s(Faisceau LV,p(Côté VCU,SDC+TSAL (1 sprint/carte))),
+    Faisceau HV
+  ),
+  p(
+    s(LAS Avant,p(Simus FEA,CAO,Points)),
+    Filaire/Châssis avant,
+    Ergonomie,
+    Fond plat / Aero
+  ),
+  p(Direction,Cooling,Faisceau sur table,Pare-feu,Volant,Electronique Accu,Carroserie,Tolérances LAS,Soft inverter,Pédalier,Interfaces DSB/MSP,Chapes,Divers CAO
+
+  )
+)
