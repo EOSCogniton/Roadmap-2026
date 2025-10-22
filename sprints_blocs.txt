@@ -1,7 +1,7 @@
 s(
   p(
     s(b("Cellule arrière",running,p((LAS Arrière,running),(Filaire/Châssis,running),(Meca batterie,running))),b("Cellule avant",p(LAS Avant,Filaire/Châssis,Ergonomie,Fond plat)),b("Interfaces pilote",p(Direction,Dashboard,Pédalier,Siège,Volant)),b("Finitions châssis",p(Pare-feu,Equipements,Tolérances LAS)),b("Carroserie",p(Livrée,Sponsors,Sidepods))),
-    s(b("Elec",running,p(s(p((TSAL,running),(SDC,running),Dashboard, Sideplate),Fusebox,Faisceau VCU + Connections), s((Faisceau HV,almost),Boite Faisceau HV),b("Elec accu",running,p((AMS,running),TSAL Sensor, Voltage indicator,(AIRs,almost),(Precharge,almost),(Current Sensor,almost))),b("HandCart",running,p((Chargeur,running),Meca hand cart)))),b("Réalisation faisceau",p(s(Faisceau sur table,Test faisceau))),b("Setup moteur",p(Software inverter,Cooling)))
+    s(b("Elec",running,p(s(p((TSAL,running),(SDC,running),Dashboard, Sideplate),Fusebox,Faisceau VCU + Connections), s((Faisceau HV,almost),Boite Faisceau HV),b("Elec accu",running,p((AMS,running),TSAL Sensor, Voltage indicator,(AIRs,almost),(Precharge,almost),(Current Sensor,running))),b("HandCart",running,p((Chargeur,running),Meca hand cart)))),b("Réalisation faisceau",p(s(Faisceau sur table,Test faisceau))),b("Setup moteur",p(Software inverter,Cooling)))
   ),
   Divers CAO
 )
