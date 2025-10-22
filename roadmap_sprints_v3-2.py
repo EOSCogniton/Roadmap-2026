@@ -149,7 +149,7 @@ with open("sprints_blocs.txt", "r", encoding="utf-8") as f:
 
 # --- Génération du graphe ---
 parse(expr, is_root=True)
-today = datetime.now().strftime("%d-%m-%Y")
+today = datetime.now().strftime("%Y-%m-%d")
 
-output_path = dot.render("roadmap_sprints_"+str(today), cleanup=True)
+output_filename = f"roadmap_sprints_{today}.png"
 print(f"✅ Graphe généré : {output_path}")
