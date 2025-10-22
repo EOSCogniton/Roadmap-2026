@@ -1,0 +1,39 @@
+name: Génération du Roadmap
+
+on:
+  push:
+    paths:
+      - "sprints_blocs.txt"
+      - "roadmap.py"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Installer Graphviz
+        run: sudo apt-get install -y graphviz
+
+      - name: Installer Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Installer dépendances Python
+        run: pip install graphviz
+
+      - name: Générer le roadmap
+        run: python roadmap.py   # ton script génère déjà `roadmap_YYYY-MM-DD.png`
+
+      - name: Commit et push du PNG généré
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add roadmap_sprints_%d-%m-%Y.png
+          git commit -m "MAJ roadmap du $(date +'%Y-%m-%d')"
+          git push
