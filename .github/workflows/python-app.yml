@@ -28,7 +28,7 @@ jobs:
         run: pip install graphviz
 
       - name: Générer le roadmap
-        run: python roadmap.py   # ton script génère déjà `roadmap_YYYY-MM-DD.png`
+        run: python roadmap_sprints_v3-2.py   # ton script génère déjà `roadmap_YYYY-MM-DD.png`
 
       - name: Commit et push du PNG généré
         run: |
