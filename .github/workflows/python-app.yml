@@ -1,8 +1,6 @@
 name: Generate Roadmap
 
 on:
-  permissions:
-    contents: write
   push:
     branches:
       - main
@@ -14,7 +12,9 @@ on:
         description: "Manual Generate"
         type: boolean
         default: false
-
+permissions:
+  contents: write
+  
 jobs:
   generate-roadmap:
     runs-on: ubuntu-latest
