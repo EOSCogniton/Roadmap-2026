@@ -33,7 +33,7 @@
                       { "name": "LAS Avant" },
                       { "name": "Filaire/Châssis" },
                       { "name": "Ergonomie" },
-                      { "name": "Fond plat" }
+                      { "name": "Fond plat", "state":"running" }
                     ]
                   }
                 ]
