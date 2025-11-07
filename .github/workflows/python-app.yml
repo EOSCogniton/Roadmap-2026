@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "sprints_blocs.txt"
+      - "sprints.json"
   workflow_dispatch:
     inputs:
       manual:
