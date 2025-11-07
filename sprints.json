@@ -1,0 +1,203 @@
+{
+  "root": {
+    "type": "s",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "s",
+            "children": [
+              {
+                "type": "b",
+                "name": "Cellule arrière",
+                "state": "running",
+                "children": [
+                  {
+                    "type": "p",
+                    "children": [
+                      { "name": "LAS Arrière", "state": "running" },
+                      { "name": "Filaire/Châssis", "state": "running" },
+                      { "name": "Meca batterie", "state": "running" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "b",
+                "name": "Cellule avant",
+                "children": [
+                  {
+                    "type": "p",
+                    "children": [
+                      { "name": "LAS Avant" },
+                      { "name": "Filaire/Châssis" },
+                      { "name": "Ergonomie" },
+                      { "name": "Fond plat" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "b",
+                "name": "Interfaces pilote",
+                "children": [
+                  {
+                    "type": "p",
+                    "children": [
+                      { "name": "Direction" },
+                      { "name": "Dashboard" },
+                      { "name": "Pédalier" },
+                      { "name": "Siège" },
+                      { "name": "Volant" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "b",
+                "name": "Finitions châssis",
+                "children": [
+                  {
+                    "type": "p",
+                    "children": [
+                      { "name": "Pare-feu" },
+                      { "name": "Equipements" },
+                      { "name": "Tolérances LAS" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "b",
+                "name": "Carroserie",
+                "children": [
+                  {
+                    "type": "p",
+                    "children": [
+                      { "name": "Livrée" },
+                      { "name": "Sponsors" },
+                      { "name": "Sidepods" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "s",
+            "children": [
+              {
+                "type": "b",
+                "name": "Elec",
+                "state": "running",
+                "children": [
+                  {
+                    "type": "p",
+                    "children": [
+                      {
+                        "type": "s",
+                        "children": [
+                          {
+                            "type": "p",
+                            "children": [
+                              { "name": "TSAL", "state": "running" },
+                              { "name": "BSPD", "state": "running" },
+                              { "name": "SDC status board" },
+                              { "name": "Dashboard" },
+                              { "name": "Sideplate" }
+                            ]
+                          },
+                          {
+                            "type": "p",
+                            "children": [
+                              { "name": "BOTS" },
+                              { "name": "Inertia Switch" }
+                            ]
+                          },
+                          { "name": "Fusebox" },
+                          { "name": "Faisceau VCU + Connections" }
+                        ]
+                      },
+                      {
+                        "type": "s",
+                        "children": [
+                          { "name": "Faisceau HV", "state": "almost" },
+                          { "name": "Boite Faisceau HV" }
+                        ]
+                      },
+                      {
+                        "type": "b",
+                        "name": "Elec accu",
+                        "state": "running",
+                        "children": [
+                          {
+                            "type": "p",
+                            "children": [
+                              { "name": "AMS", "state": "running" },
+                              { "name": "TSAL Sensor", "state": "running" },
+                              { "name": "Voltage indicator", "state": "running" },
+                              { "name": "AIRs", "state": "almost" },
+                              { "name": "Precharge", "state": "almost" },
+                              { "name": "Current Sensor", "state": "running" }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "b",
+                        "name": "HandCart",
+                        "state": "running",
+                        "children": [
+                          {
+                            "type": "p",
+                            "children": [
+                              { "name": "Chargeur", "state": "running" },
+                              { "name": "Meca hand cart", "state": "running" }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "b",
+                "name": "Réalisation faisceau",
+                "children": [
+                  {
+                    "type": "p",
+                    "children": [
+                      {
+                        "type": "s",
+                        "children": [
+                          { "name": "Faisceau sur table" },
+                          { "name": "Test faisceau" }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "b",
+                "name": "Setup moteur",
+                "children": [
+                  {
+                    "type": "p",
+                    "children": [
+                      { "name": "Software inverter" },
+                      { "name": "Cooling" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "name": "Divers CAO" }
+    ]
+  }
+}

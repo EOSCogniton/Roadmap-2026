@@ -14,7 +14,7 @@ on:
         default: false
 permissions:
   contents: write
-  
+
 jobs:
   generate-roadmap:
     runs-on: ubuntu-latest
@@ -31,7 +31,7 @@ jobs:
 
       - name: Run python generation script
         run: |
-          python3 roadmap_sprints_v3-2.py
+          python3 roadmap_sprints_v4.py
 
       - name: Get today's filename
         run: echo "FILENAME=roadmap_sprints_$(date +'%Y-%m-%d').png" >> $GITHUB_ENV

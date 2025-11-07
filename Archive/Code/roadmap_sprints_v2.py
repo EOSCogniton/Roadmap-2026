@@ -31,27 +31,15 @@ def parse(expr):
         for a, b in zip(nodes, nodes[1:]):
             dot.edge(a[1], b[0])
         return nodes[0][0], nodes[-1][1]
-
     elif expr.startswith("p(") and expr.endswith(")"):
         items = split_args(expr[2:-1])
         nodes = [parse(item) for item in items]
-
-        # parallèle : même entrée et sortie
+        # parallèle : même entrée et même sortie
         start, end = new_node("▶"), new_node("■")
-
-        # créer un sous-graphe invisible pour aligner les noeuds
-        with dot.subgraph() as s:
-            s.attr(rank="same")
-            for n in nodes:
-                s.node(n[0])  # entrée de la branche
-                s.node(n[1])  # sortie de la branche
-
         for n in nodes:
             dot.edge(start, n[0])
             dot.edge(n[1], end)
-
         return start, end
-
     else:
         # feuille = tâche simple
         n = new_node(expr)
