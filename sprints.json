@@ -142,7 +142,7 @@
                               { "name": "Precharge", "state": "done" },
                               { "name": "Current Sensor", "state": "running" },
                               { "name": "AMS/IMD/RESET", "state": "done" },
-                              { "name": "IMD", "state":"running"}
+                              { "name": "IMD", "state":"done"}
                             ]
                           }
                         ]
