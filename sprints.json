@@ -17,7 +17,7 @@
                     "type": "p",
                     "children": [
                       { "name": "LAS Arrière", "state": "running" },
-                      { "name": "Filaire/Châssis", "state": "running" },
+                      { "name": "Filaire/Châssis", "state": "blocked" },
                       { "name": "Meca batterie", "state": "running" }
                     ]
                   }
@@ -26,13 +26,14 @@
               {
                 "type": "b",
                 "name": "Cellule avant",
+                "state":"running",
                 "children": [
                   {
                     "type": "p",
                     "children": [
                       { "name": "LAS Avant" },
-                      { "name": "Filaire/Châssis" },
-                      { "name": "Ergonomie" },
+                      { "name": "Filaire/Châssis", "state":"running" },
+                      { "name": "Ergonomie", "state":"running" },
                       { "name": "Fond plat", "state":"running" }
                     ]
                   }
@@ -45,7 +46,7 @@
                   {
                     "type": "p",
                     "children": [
-                      { "name": "Direction" },
+                      { "name": "Direction","state":"running" },
                       { "name": "Dashboard" },
                       { "name": "Pédalier" },
                       { "name": "Siège" },
@@ -103,8 +104,8 @@
                             "children": [
                               { "name": "TSAL", "state": "running" },
                               { "name": "BSPD", "state": "running" },
-                              { "name": "SDC status board" },
-                              { "name": "Dashboard" },
+                              { "name": "SDC status board", "state":"done" },
+                              { "name": "Dashboard","state":"running" },
                               { "name": "Sideplate" }
                             ]
                           },
@@ -122,8 +123,8 @@
                       {
                         "type": "s",
                         "children": [
-                          { "name": "Faisceau HV", "state": "almost" },
-                          { "name": "Boite Faisceau HV" }
+                          { "name": "Faisceau HV", "state": "done" },
+                          { "name": "Boite Faisceau HV", "state":"running" }
                         ]
                       },
                       {
@@ -137,9 +138,11 @@
                               { "name": "AMS", "state": "running" },
                               { "name": "TSAL Sensor", "state": "running" },
                               { "name": "Voltage indicator", "state": "running" },
-                              { "name": "AIRs", "state": "almost" },
-                              { "name": "Precharge", "state": "almost" },
-                              { "name": "Current Sensor", "state": "running" }
+                              { "name": "AIRs", "state": "done" },
+                              { "name": "Precharge", "state": "done" },
+                              { "name": "Current Sensor", "state": "running" },
+                              { "name": "AMS/IMD/RESET", "state": "done" },
+                              { "name": "IMD", "state":"running"}
                             ]
                           }
                         ]

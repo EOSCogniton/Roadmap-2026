@@ -36,7 +36,7 @@ counter = 0
 STATE_COLORS = {
     "tostart":  ("#E6EEF8", "#000000", "#FFFFFF"),
     "running":  ("#FFF4CC", "#E0B93B", "#ff951c"),
-    "finished": ("#D9F2D9", "#6AAF6A", "#4deb4d"),
+    "done": ("#D9F2D9", "#6AAF6A", "#4deb4d"),
     "almost":   ("#f03ed2", "#b30e97", "#ff38dd"),
     "blocked":  ("#F9D6D5", "#C74C48", "#de2b23"),
     "leaf":     ("#DDE7FF", "#5A7DBA", "#E6EFFF")
