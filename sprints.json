@@ -113,7 +113,15 @@
                             "type": "p",
                             "children": [
                               { "name": "BOTS" },
-                              { "name": "Inertia Switch","state":"done" }
+                              { "name": "Inertia Switch" },
+                              {"type": "s",
+                              "children": [
+                                    { "name": "Input/Output VCU", "state": "running" },
+                                    { "name": "Connectique VCU"},
+                                    { "name": "Programmation VCU"}
+                                
+                              ]}
+                              
                             ]
                           },
                           { "name": "Fusebox" },
