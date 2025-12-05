@@ -17,7 +17,7 @@
                     "type": "p",
                     "children": [
                       { "name": "LAS Arrière", "state": "running" },
-                      { "name": "Filaire/Châssis", "state": "blocked" },
+                      { "name": "Filaire/Châssis", "state": "running" },
                       { "name": "Meca batterie", "state": "running" }
                     ]
                   }
@@ -31,7 +31,7 @@
                   {
                     "type": "p",
                     "children": [
-                      { "name": "LAS Avant" },
+                      { "name": "LAS Avant","state":"running" },
                       { "name": "Filaire/Châssis", "state":"running" },
                       { "name": "Ergonomie", "state":"running" },
                       { "name": "Fond plat", "state":"running" }
@@ -113,11 +113,11 @@
                             "type": "p",
                             "children": [
                               { "name": "BOTS" },
-                              { "name": "Inertia Switch" }
+                              { "name": "Inertia Switch","state":"done" }
                             ]
                           },
                           { "name": "Fusebox" },
-                          { "name": "Faisceau VCU + Connections" }
+                          { "name": "Faisceau VCU + Connections", "state":"running"}
                         ]
                       },
                       {
@@ -136,11 +136,11 @@
                             "type": "p",
                             "children": [
                               { "name": "AMS", "state": "running" },
-                              { "name": "TSAL Sensor", "state": "running" },
+                              { "name": "TSAL Sensor", "state": "done" },
                               { "name": "Voltage indicator", "state": "running" },
                               { "name": "AIRs", "state": "done" },
                               { "name": "Precharge", "state": "done" },
-                              { "name": "Current Sensor", "state": "running" },
+                              { "name": "Current Sensor", "state": "done" },
                               { "name": "AMS/IMD/RESET", "state": "done" },
                               { "name": "IMD", "state":"done"}
                             ]
