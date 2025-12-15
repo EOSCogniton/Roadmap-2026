@@ -48,8 +48,8 @@
                     "children": [
                       { "name": "Direction","state":"running" },
                       { "name": "Dashboard" },
-                      { "name": "Pédalier" },
-                      { "name": "Siège" },
+                      { "name": "Pédalier","state":"running" },
+                      { "name": "Siège","state":"running" },
                       { "name": "Volant" }
                     ]
                   }
@@ -103,29 +103,28 @@
                             "type": "p",
                             "children": [
                               { "name": "TSAL", "state": "running" },
-                              { "name": "BSPD", "state": "running" },
+                              { "name": "BSPD", "state": "almost" },
                               { "name": "SDC status board", "state":"done" },
                               { "name": "Dashboard","state":"running" },
-                              { "name": "Sideplate" }
+                              { "name": "Sideplate" ,"state":"running"}
                             ]
                           },
                           {
                             "type": "p",
                             "children": [
-                              { "name": "BOTS" },
-                              { "name": "Inertia Switch" },
+                              { "name": "BOTS" , "state":"done"},
+                              { "name": "Inertia Switch","state":"done" },
                               {"type": "s",
                               "children": [
                                     { "name": "Input/Output VCU", "state": "running" },
-                                    { "name": "Connectique VCU"},
+                                    { "name": "Connectique VCU","state":"running"},
                                     { "name": "Programmation VCU"}
-                                
+
                               ]}
-                              
+
                             ]
                           },
                           { "name": "Fusebox" },
-                          { "name": "Faisceau VCU + Connections", "state":"running"}
                         ]
                       },
                       {
@@ -145,7 +144,7 @@
                             "children": [
                               { "name": "AMS", "state": "running" },
                               { "name": "TSAL Sensor", "state": "done" },
-                              { "name": "Voltage indicator", "state": "running" },
+                              { "name": "Voltage indicator", "state": "done" },
                               { "name": "AIRs", "state": "done" },
                               { "name": "Precharge", "state": "done" },
                               { "name": "Current Sensor", "state": "done" },
