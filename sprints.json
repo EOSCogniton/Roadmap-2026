@@ -11,7 +11,7 @@
               {
                 "type": "b",
                 "name": "Cellule arrière",
-                "state": "running",
+                "state": "done",
                 "children": [
                   {
                     "type": "p",
@@ -42,6 +42,7 @@
               {
                 "type": "b",
                 "name": "Interfaces pilote",
+                "state":"running",
                 "children": [
                   {
                     "type": "p",
@@ -58,6 +59,7 @@
               {
                 "type": "b",
                 "name": "Finitions châssis",
+                "state":"running",
                 "children": [
                   {
                     "type": "p",
@@ -72,6 +74,7 @@
               {
                 "type": "b",
                 "name": "Carroserie",
+                "state":"running",
                 "children": [
                   {
                     "type": "p",
@@ -91,7 +94,7 @@
               {
                 "type": "b",
                 "name": "Elec",
-                "state": "running",
+                "state": "done",
                 "children": [
                   {
                     "type": "p",
@@ -175,6 +178,7 @@
               {
                 "type": "b",
                 "name": "Réalisation faisceau",
+                "state":"running",
                 "children": [
                   {
                     "type": "p",
@@ -193,6 +197,7 @@
               {
                 "type": "b",
                 "name": "Setup moteur",
+                "state":"running",
                 "children": [
                   {
                     "type": "p",
