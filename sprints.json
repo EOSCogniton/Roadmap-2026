@@ -16,9 +16,9 @@
                   {
                     "type": "p",
                     "children": [
-                      { "name": "LAS Arrière", "state": "running" },
-                      { "name": "Filaire/Châssis", "state": "running" },
-                      { "name": "Meca batterie", "state": "running" }
+                      { "name": "LAS Arrière", "state": "done" },
+                      { "name": "Filaire/Châssis", "state": "done" },
+                      { "name": "Meca batterie", "state": "done" }
                     ]
                   }
                 ]
@@ -31,10 +31,10 @@
                   {
                     "type": "p",
                     "children": [
-                      { "name": "LAS Avant","state":"running" },
-                      { "name": "Filaire/Châssis", "state":"running" },
+                      { "name": "LAS Avant","state":"done" },
+                      { "name": "Filaire/Châssis", "state":"done" },
                       { "name": "Ergonomie", "state":"running" },
-                      { "name": "Fond plat", "state":"running" }
+                      { "name": "Fond plat", "state":"done" }
                     ]
                   }
                 ]
@@ -46,11 +46,11 @@
                   {
                     "type": "p",
                     "children": [
-                      { "name": "Direction","state":"running" },
-                      { "name": "Dashboard" },
-                      { "name": "Pédalier","state":"running" },
-                      { "name": "Siège","state":"running" },
-                      { "name": "Volant" }
+                      { "name": "Direction","state":"done" },
+                      { "name": "Dashboard", "state":"running" },
+                      { "name": "Pédalier","state":"done" },
+                      { "name": "Siège","state":"done" },
+                      { "name": "Volant", "state":"done" }
                     ]
                   }
                 ]
@@ -62,9 +62,9 @@
                   {
                     "type": "p",
                     "children": [
-                      { "name": "Pare-feu" },
-                      { "name": "Equipements" },
-                      { "name": "Tolérances LAS" }
+                      { "name": "Pare-feu","state":"running" },
+                      { "name": "Equipements","state":"done" },
+                      { "name": "Tolérances LAS","state":"done" }
                     ]
                   }
                 ]
@@ -76,9 +76,9 @@
                   {
                     "type": "p",
                     "children": [
-                      { "name": "Livrée" },
-                      { "name": "Sponsors" },
-                      { "name": "Sidepods" }
+                      { "name": "Livrée","state":"running" },
+                      { "name": "Sponsors","state":"running" },
+                      { "name": "Sidepods","state":"blocked" }
                     ]
                   }
                 ]
@@ -102,11 +102,11 @@
                           {
                             "type": "p",
                             "children": [
-                              { "name": "TSAL", "state": "running" },
-                              { "name": "BSPD", "state": "almost" },
+                              { "name": "TSAL", "state": "done" },
+                              { "name": "BSPD", "state": "done" },
                               { "name": "SDC status board", "state":"done" },
-                              { "name": "Dashboard","state":"running" },
-                              { "name": "Sideplate" ,"state":"running"}
+                              { "name": "Dashboard","state":"done" },
+                              { "name": "Sideplate" ,"state":"done"}
                             ]
                           },
                           {
@@ -116,22 +116,22 @@
                               { "name": "Inertia Switch","state":"done" },
                               {"type": "s",
                               "children": [
-                                    { "name": "Input/Output VCU", "state": "running" },
-                                    { "name": "Connectique VCU","state":"running"},
-                                    { "name": "Programmation VCU"}
+                                    { "name": "Input/Output VCU", "state": "done" },
+                                    { "name": "Connectique VCU","state":"done"},
+                                    { "name": "Programmation VCU","state":"done"}
 
                               ]}
 
                             ]
                           },
-                          { "name": "Fusebox" }
+                          { "name": "Fusebox","state":"done" }
                         ]
                       },
                       {
                         "type": "s",
                         "children": [
                           { "name": "Faisceau HV", "state": "done" },
-                          { "name": "Boite Faisceau HV", "state":"running" }
+                          { "name": "Boite Faisceau HV", "state":"done" }
                         ]
                       },
                       {
@@ -163,7 +163,7 @@
                             "type": "p",
                             "children": [
                               { "name": "Chargeur", "state": "running" },
-                              { "name": "Meca hand cart", "state": "running" }
+                              { "name": "Meca hand cart", "state": "done" }
                             ]
                           }
                         ]
@@ -182,7 +182,7 @@
                       {
                         "type": "s",
                         "children": [
-                          { "name": "Faisceau sur table" },
+                          { "name": "Faisceau sur table","state":"running" },
                           { "name": "Test faisceau" }
                         ]
                       }
@@ -197,8 +197,8 @@
                   {
                     "type": "p",
                     "children": [
-                      { "name": "Software inverter" },
-                      { "name": "Cooling" }
+                      { "name": "Software inverter","state":"done" },
+                      { "name": "Cooling","state":"running" }
                     ]
                   }
                 ]
